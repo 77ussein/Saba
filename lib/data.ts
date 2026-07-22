@@ -1,0 +1,9 @@
+export type Product={slug:string;name:string;nameEn:string;category:string;price:number;original:number;rating:number;reviews:number;image:string;badge?:string;description:string};
+export const products:Product[]=[
+{slug:"musk-of-marib",name:"مسك مأرب",nameEn:"Musk of Marib",category:"العطور",price:420,original:520,rating:4.9,reviews:128,image:"/images/perfume.png",badge:"الأكثر مبيعًا",description:"تركيبة ملكية من المسك والعنبر واللبان اليمني، صُممت لتترك أثرًا خالدًا."},
+{slug:"sheba-necklace",name:"عقد بلقيس",nameEn:"Bilqis Necklace",category:"المجوهرات",price:890,original:1100,rating:4.8,reviews:74,image:"/images/jewelry.png",badge:"جديد",description:"قطعة مطلية بالذهب مستوحاة من نقوش المعابد اليمنية القديمة."},
+{slug:"royal-incense",name:"بخور سبأ الملكي",nameEn:"Royal Saba Incense",category:"الهدايا",price:185,original:220,rating:4.9,reviews:203,image:"/images/incense.png",badge:"اختيار SABA",description:"مزيج فاخر من أجود أنواع العود واللبان، محضّر بعناية في اليمن."},
+{slug:"marib-oud",name:"عود مأرب",nameEn:"Marib Oud",category:"العطور",price:360,original:430,rating:4.7,reviews:91,image:"/images/perfume.png",description:"دهن عود مركز بنفحات دخانية دافئة وتوقيع عصري."},
+{slug:"musnad-cuff",name:"سوار المسند",nameEn:"Musnad Cuff",category:"الإكسسوارات",price:540,original:650,rating:4.8,reviews:46,image:"/images/jewelry.png",description:"سوار نحتي محفور بحروف المسند في صياغة عصرية جريئة."},
+{slug:"frankincense-set",name:"طقم اللبان الأصلي",nameEn:"Frankincense Ritual",category:"الأساسيات",price:240,original:280,rating:4.6,reviews:63,image:"/images/incense.png",description:"طقس عطري متكامل للمنزل يضم لبانًا يمنيًا ومبخرة أنيقة."}];
+export const categories=[{name:"العطور",en:"Perfumes",slug:"perfumes",image:"/images/perfume.png"},{name:"المجوهرات",en:"Jewelry",slug:"jewelry",image:"/images/jewelry.png"},{name:"الهدايا",en:"Gifts",slug:"gifts",image:"/images/incense.png"}];

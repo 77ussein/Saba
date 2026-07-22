@@ -1,0 +1,1 @@
+export default function Loading(){return <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-6 py-16 md:grid-cols-4">{Array.from({length:8}).map((_,i)=><div key={i}><div className="aspect-[4/5] animate-pulse bg-muted"/><div className="mt-4 h-4 w-2/3 animate-pulse bg-muted"/></div>)}</div>}

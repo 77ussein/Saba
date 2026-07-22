@@ -1,0 +1,4 @@
+import type{Metadata,Viewport}from"next";import{Noto_Kufi_Arabic,Cormorant_Garamond}from"next/font/google";import"./globals.css";import{StoreProvider}from"@/components/store-provider";import{Header,Footer}from"@/components/site-chrome";
+const sans=Noto_Kufi_Arabic({subsets:["arabic"],variable:"--font-sans"});const serif=Cormorant_Garamond({subsets:["latin"],weight:["500","600","700"],variable:"--font-serif"});
+export const metadata:Metadata={title:{default:"SABA | إرثٌ يُروى وفخامةٌ تُقتنى",template:"%s | SABA"},description:"وجهتك العالمية للروائح والمجوهرات والهدايا اليمنية الفاخرة."};export const viewport:Viewport={themeColor:"#0F0F0F",colorScheme:"light"};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ar" className={`bg-background ${sans.variable} ${serif.variable}`}><body className="font-sans antialiased"><StoreProvider><Header/><main>{children}</main><Footer/></StoreProvider></body></html>}
